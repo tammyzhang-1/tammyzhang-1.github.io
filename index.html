@@ -4,12 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tammy Zhang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
+        <div id="landing">
+            <div id="text">
+                <h1 class="libre-bodoni-italic">hello!</h1>
+                <h2 class="lora-regular">i'm tammy zhang.</h2>
+                <p class="fira-mono-regular">full-stack software engineer;</p>
+                <p class="fira-mono-regular">currently working at NSF NCAR in frontend</p>
+            </div>
+            <div id="img-container">
+                <img id="headshot" src="images/headshot-copy-modified.png" alt="headshot" />
+            </div>
+            <div class="lora-regular" id="nav">
+                <div class="vertical-line">
+                </div>
+                <nav>
+                  <ul id="links" class="unselected-view">
+                      <li id="intro-li" class="current-view"><a href="#landing">about me</a></li>
+                      <li id="work-li"><a href="#work-experience">experience</a></li>
+                      <li id="project-li"><a href="#projects">projects</a></li>
+                  </ul>
+                  <ul id="nav-icons">
+                      <li><a href="mailto:tz332@cornell.edu"><img src="images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
+                      <li><a href="https://www.linkedin.com/in/tammy-zhang/" target="_blank"><img src="images/linkedin.png" alt="linkedin" width="35" height="35" title="Link to my LinkedIn profile"/></a></li>
+                      <li><a href="https://github.com/tammyzhang-1"><img src="images/github.png" alt="github" width="35" height="35" title="Link to my GitHub profile" /></a></li>
+                      <li><a href="documents/ZhangTammy-Resume.pdf"><img src="images/resume.png" alt="resume" width="45" height="45" title="See my resume" /></a></li>
+                  </ul>
+                </nav>
+                <div class="vertical-line"></div>
+              </div>
+          </div>
+        </div>
+        
+        <div id="about">
+            <h2 class="libre-bodoni-italic">about me</h2>
+            <p>
+                Your device is <span id="screen-width"></span> pixels wide and <span id="screen-height"></span> pixels tall.
+            </p>
+            <p>
+                You're currently looking at a little world that's <span id="screen-dimensions"></span> square pixels big.
+            </p>
+            <p>
+                What can fit into this little world?
+            </p>
+            <p>
+                <ul>
+                    <li>all of San Francisco's trees</li>
+                    <li>whole hurricanes and tornadoes</li>
+                    <li>11,145 bird species ... and 72,435,340 bird photos</li>
+                    <li>the entirety of Earth's atmosphere across decades and centuries, even</li>
+                </ul>
+            </p>
+            
+            <p>
+                My name is Tammy and my passion is taking the Earth's trillions of data points - whether it's spaces spanning miles across or the personal stories of billions of people - and transforming them into interactive, accessible web interfaces like the screen you're looking at now.
+            </p>
+            <p>
+                I'm a recent graduate from Cornell University with a bachelor's and master's degree in Information Science, class of December 2024.
+                I design and develop full-stack web applications that bring data to life.
+            </p>
+        </div>
+        <div id="work-experience">
+            <h2 class="libre-bodoni-italic">work experience</h2>
+            <div class="experience-section">
+                <h3 class="lora-regular">The NSF National Center for Atmospheric Research</h3>
+                <p class="fira-mono-regular">
+
+                </p>
+                <ul>
+                    <li>NCAR Visualization Gallery</li>
+                    <li>Collaboration with Louisiana State University</li>
+                    <li>Hurricanes</li>
+                    <li>Utorview forecast</li>
+                    <li>LENS2 dashboard</li>
+                </ul>
+            </div>
+            <div class="experience-section">
+                <h3 class="lora-regular">The Cornell Lab of Ornithology</h3>
+                <p class="fira-mono-regular">
+
+                </p>
+            </div>
+            <div class="experience-section">
+                <h3 class="lora-regular">Cornell University</h3>
+                <p class="fira-mono-regular">
+
+                </p>
+            </div>
+            <div class="experience-section">
+                <h3 class="lora-regular">The Denver Museum of Nature and Science</h3>
+                <p class="fira-mono-regular">
+
+                </p>
+            </div>
+        </div>
+        <div id="projects">
+            <h2 class="libre-bodoni-italic">projects</h2>
+            <p class="fira-mono-regular">
+            </p>
+            <ul>
+                <li>Collaboration with AImpower (master's capstone)</li>
+                <li>Reddit text viz</li>
+                <li>Final digital destination</li>
+                <li>NCT force</li>
+                <li>Boston restaurants</li>
+                <li>Global human day</li>
+                <li>San Francisco trees</li>
+                <li>Superbloom</li>
+                <li>Thousand year flood</li>
+                <li>Cornell crime map</li>
+                <li>Van Gogh colors</li>
+                <li>Cherry blossoms</li>
+            </ul>
+        </div>
     </main>
     <footer>
+        <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
     </footer>
 </body>
 </html>
+
+<script>
+    window.onload = function() {
+        var screenWidth = window.screen.width;
+        var screenHeight = window.screen.height;
+        var screenDimensions = screenWidth * screenHeight;
+        document.getElementById("screen-width").innerHTML = screenWidth;
+        document.getElementById("screen-height").innerHTML = screenHeight;
+        document.getElementById("screen-dimensions").innerHTML = screenDimensions;
+    }
+</script>
