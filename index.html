@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,8 +16,8 @@
             <div id="text">
                 <h1 class="libre-bodoni-italic">hello!</h1>
                 <h2 class="lora-regular">i'm tammy zhang.</h2>
-                <p class="fira-mono-regular">full-stack software engineer;</p>
-                <p class="fira-mono-regular">currently working at NSF NCAR in frontend</p>
+                <p class="fira-mono-regular">recent master's grad from cornell university;</p>
+                <p class="fira-mono-regular">currently working at NSF NCAR in frontend dev</p>
             </div>
             <div id="img-container">
                 <img id="headshot" src="images/headshot-copy-modified.png" alt="headshot" />
@@ -83,6 +83,10 @@
                 <div class="skill-icon">
                     <img src="images/nextjs.png" alt="Next.js" />
                     <p>Next.js</p>
+                </div>
+                <div class="skill-icon">
+                    <img src="images/nodejs.svg" alt="Nodejs" />
+                    <p>Node.js</p>
                 </div>
                 <div class="skill-icon">
                     <img src="images/d3.png" alt="D3.js" />
@@ -161,10 +165,6 @@
                     <p>VSCode</p>
                 </div>
                 <div class="skill-icon">
-                    <img src="images/nodejs.svg" alt="Nodejs" />
-                    <p>Node.js</p>
-                </div>
-                <div class="skill-icon">
                     <img src="images/jquery.png" alt="jQuery" />
                     <p>jQuery</p>
                 </div>
@@ -177,35 +177,55 @@
         <div id="work-experience">
             <h2 class="libre-bodoni-italic">work experience</h2>
             <div class="experience-section">
-                <h3 class="lora-regular">The NSF National Center for Atmospheric Research</h3>
-                <p class="fira-mono-regular">
-
-                </p>
-                <ul>
+                <div class="position">
+                    <div class="company-logo">
+                        <img src="images/ncar.png" alt="NSF NCAR logo" />
+                    </div>
+                    <div class="company-text">
+                        <h3>Frontend Developer at the <span class="company-name">NSF National Center for Atmospheric Research</span></h3>
+                        <p class="company-timespan">Feb 2023 - present</p>
+                    </div>
+                </div>
+                <!-- <ul>
                     <li>NCAR Visualization Gallery</li>
                     <li>Collaboration with Louisiana State University</li>
                     <li>Hurricanes</li>
                     <li>Utorview forecast</li>
                     <li>LENS2 dashboard</li>
-                </ul>
+                </ul> -->
             </div>
             <div class="experience-section">
-                <h3 class="lora-regular">The Cornell Lab of Ornithology</h3>
-                <p class="fira-mono-regular">
-
-                </p>
+                <div class="position">
+                    <div class="company-logo">
+                        <img src="images/labofornithology.png" alt="Cornell Lab of Ornithology logo" />
+                    </div>
+                    <div class="company-text">
+                        <h3>Media Curator at the <span class="company-name">Cornell Lab of Ornithology</span></h3>
+                        <p class="company-timespan">Jan 2021 - Aug 2023</p>
+                    </div>
+                </div>
             </div>
             <div class="experience-section">
-                <h3 class="lora-regular">Cornell University</h3>
-                <p class="fira-mono-regular">
-
-                </p>
+                <div class="position">
+                    <div class="company-logo">
+                        <img src="images/cornell.png" alt="Cornell logo" />
+                    </div>  
+                    <div class="company-text">
+                        <h3>Web Development Teaching Assistant at <span class="company-name">Cornell University</span></h3>
+                        <p class="company-timespan">Aug 2022 - Dec 2022</p>
+                    </div>
+                </div>
             </div>
             <div class="experience-section">
-                <h3 class="lora-regular">The Denver Museum of Nature and Science</h3>
-                <p class="fira-mono-regular">
-
-                </p>
+                <div class="position">
+                    <div class="company-logo">
+                        <img src="images/dmns.jpg" alt="Denver Museum of Nature and Science logo" />
+                    </div>
+                    <div class="company-text">
+                        <h3>Summer Intern at the <span class="company-name">Denver Museum of Nature and Science</span></h3>
+                        <p class="company-timespan">May 2018 - Aug 2018</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="projects">

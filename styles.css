@@ -75,7 +75,7 @@ html, body {
 }
 
 #text {
-    width: 46%;
+    width: 48%;
 }
 
 #img-container {
@@ -153,15 +153,25 @@ html, body {
 }
 
 p, ul li {
-    font-family: "Lora", serif;
+    /* font-family: "Lora", serif; */
+    font-family: 'Urbanist', sans-serif;
+}
+
+#about p, #about ul li, #work-experience p, #work-experience ul li {
+    font-size: 1.25em;
+    color:#474747;
+    line-height: 1.5;
 }
 
 h2 {
     color: #518892;
+}
+
+#skills h2, #work-experience h2, #projects h2 {
     padding-top: 1em;
 }
 
-span {
+#about span {
     color: #889EBD;
 }
 
@@ -194,6 +204,52 @@ span {
     font-size: 0.9em;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+.experience-section {
+    padding: 1em 0;
+    border-bottom: solid thin #f4f4f4;
+}
+
+.position {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#work-experience h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.15em;
+}
+
+.company-logo {
+    max-height: 2em;
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo img {
+    display: block;
+    max-height: 2em;
+    width: auto;
+}
+
+.company-name {
+    font-weight: 600;
+    color: #474747;
+}
+
+#work-experience p.company-timespan {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #949494;
 }
 
 footer {
