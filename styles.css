@@ -148,7 +148,7 @@ html, body {
     border-right: solid thin white;
 }
 
-#about, #work-experience, #projects {
+#about, #skills, #work-experience, #projects {
     padding: 0 8em 0 20em;
 }
 
@@ -163,6 +163,37 @@ h2 {
 
 span {
     color: #889EBD;
+}
+
+#skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.skill-icon {
+    border: thin solid #f4f4f4;
+    border-radius: 1em;
+    padding: 0.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    width: 9%;
+    box-shadow: 0 0 0.5em #e4e4e4;
+}
+
+.skill-icon img {
+    display: block;
+    max-width: 4em;
+    height: 2em;
+}
+
+.skill-icon p {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 footer {
