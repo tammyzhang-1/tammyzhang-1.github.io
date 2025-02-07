@@ -154,7 +154,7 @@ html, body {
 
 p, ul li {
     /* font-family: "Lora", serif; */
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Figtree', sans-serif;
 }
 
 #about p, #about ul li, #work-experience p, #work-experience ul li {
@@ -218,7 +218,7 @@ h2 {
 }
 
 #work-experience h3 {
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Figtree', sans-serif;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0.15em;
