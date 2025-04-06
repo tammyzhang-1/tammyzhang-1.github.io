@@ -214,12 +214,12 @@ h2 {
 .position {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 #work-experience h3 {
     font-family: 'Figtree', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 0;
     margin-bottom: 0.15em;
 }
