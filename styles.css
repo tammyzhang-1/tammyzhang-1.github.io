@@ -1,10 +1,18 @@
-html, body {
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .libre-bodoni-italic {
@@ -51,12 +59,14 @@ html, body {
 #landing .libre-bodoni-italic {
     font-size: 192px;
     margin: 0 0 -0.15em 0;
-    padding: 0;
+    padding: 0 0.5em 0 0;
     background: url(images/bg2.jpg) 0 0 / cover no-repeat;
     color: #889EBD;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    min-width: max-content
 }
 
 #text .lora-regular {
@@ -64,6 +74,7 @@ html, body {
     margin: 0 0 0.5em 0;
     padding: 0;
     color: #518892;
+    white-space: nowrap;
 }
 
 #text .fira-mono-regular {
@@ -72,6 +83,7 @@ html, body {
     padding: 0;
     line-height: 1.35;
     color: #889EBD;
+    white-space: nowrap;
 }
 
 #text {
@@ -91,7 +103,7 @@ html, body {
 
 #headshot {
     display: block;
-    max-height: 70%;
+    aspect-ratio: 1/1;
 }
 
 #nav {
@@ -263,9 +275,9 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 1/1;
-    width: 30%;
-    border-radius: 1em;
+    aspect-ratio: 1.15/1;
+    width: 32%;
+    border-radius: 0.75em;
     /* padding: 0.5em; */
     box-shadow: 0 0 0.5em #e4e4e4;
 }
@@ -275,9 +287,52 @@ h2 {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1em;
+    border-radius: 0.75em;
 }
 
 footer {
     padding: 2em 0 2em 20em;
 }
+
+@media (max-width: 1350px) {
+    #landing {
+        padding: 0 0 0 17em;
+        gap: 3em;
+    }
+
+    #landing .libre-bodoni-italic {
+        font-size: 172px; 
+    }
+
+    #text .lora-regular {
+        font-size: 50px;
+    }
+    
+    #text .fira-mono-regular {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #img-container {
+        max-width: 35%;
+    }
+
+    #landing .libre-bodoni-italic {
+        font-size: 160px; 
+    }
+
+    #text .lora-regular {
+        font-size: 48px;
+    }
+} 
+
+/* @media (max-width: 885px) {
+    #nav {
+        display: none;
+    }
+
+    #landing {
+        padding: 0em;
+    }
+} */
