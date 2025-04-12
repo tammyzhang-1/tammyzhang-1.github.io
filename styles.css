@@ -106,6 +106,19 @@ body {
     aspect-ratio: 1/1;
 }
 
+.hamburger {
+    display: none;
+    font-size: 3em;
+    cursor: pointer;
+    padding: 0.5em;
+    /* background: white; */
+    color: #949494;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
 #nav {
     position: fixed;
     left: 0;
@@ -113,6 +126,8 @@ body {
     z-index: 1;
     background-color: #949494;
     padding: 0 2em 0 1em;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 8px #949494a7;
 }
 
 #nav ul {
@@ -300,6 +315,14 @@ footer {
         gap: 3em;
     }
 
+    #about, #skills, #work-experience, #projects {
+        padding: 0 8em 0 17em;
+    }
+
+    footer {
+        padding: 2em 0 2em 17em;
+    }
+
     #landing .libre-bodoni-italic {
         font-size: 172px; 
     }
@@ -314,7 +337,20 @@ footer {
 }
 
 @media (max-width: 1200px) {
-    #img-container {
+    #landing {
+        padding: 0 8em 0 10em;
+        gap: 7em;
+    }
+
+    #about, #skills, #work-experience, #projects {
+        padding: 0 8em 0 10em;
+    }
+
+    footer {
+        padding: 2em 8em 2em 10em;
+    }
+
+    /* #img-container {
         max-width: 35%;
     }
 
@@ -324,6 +360,18 @@ footer {
 
     #text .lora-regular {
         font-size: 48px;
+    } */
+
+    #nav {
+        transform: translateX(-100%);
+    }
+
+    #nav.open {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: block;
     }
 } 
 

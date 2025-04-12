@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
     <div class="lora-regular" id="nav">
         <div class="vertical-line">
         </div>
@@ -350,4 +351,11 @@
         document.getElementById("screen-height").innerHTML = screenHeight;
         document.getElementById("screen-dimensions").innerHTML = screenDimensions;
     }
+
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+    });
 </script>
