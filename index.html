@@ -18,11 +18,11 @@
         <div class="vertical-line">
         </div>
         <nav>
-          <ul id="links" class="unselected-view">
-              <li id="intro-li" class="current-view"><a href="#landing">about me</a></li>
+          <ul id="links">
+              <li id="intro-li" class="current-view"><a href="#about">about me</a></li>
               <li id="skills-li"><a href="#skills">skills</a></li>
               <li id="work-li"><a href="#work-experience">experience</a></li>
-              <li id="project-li"><a href="#projects">portfolio</a></li>
+              <li id="projects-li"><a href="#projects">portfolio</a></li>
           </ul>
           <ul id="nav-icons">
               <li><a href="mailto:tz332@cornell.edu"><img src="images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
@@ -44,11 +44,9 @@
             <div id="img-container">
                 <img id="headshot" src="images/headshot-copy-modified.png" alt="headshot" />
             </div>
-            
           </div>
         </div>
-        
-        <div id="about">
+        <div class="page-section" id="about">
             <h2 class="libre-bodoni-italic">about me</h2>
             <p>
                 Your device is <span id="screen-width"></span> pixels wide and <span id="screen-height"></span> pixels tall.
@@ -76,7 +74,7 @@
                 I design and develop full-stack web applications that bring data to life.
             </p>
         </div>
-        <div id="skills">
+        <div class="page-section" id="skills">
             <h2 class="libre-bodoni-italic">skills</h2>
 
             <div id="skill-icons">
@@ -178,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div id="work-experience">
+        <div class="page-section" id="work-experience">
             <h2 class="libre-bodoni-italic">work experience</h2>
             <div class="experience-section">
                 <div class="position">
@@ -243,7 +241,7 @@
                 </div>
             </div>
         </div>
-        <div id="projects">
+        <div class="page-section" id="projects">
             <h2 class="libre-bodoni-italic">portfolio</h2>
             <p class="fira-mono-regular">
             </p>
@@ -367,4 +365,35 @@
         hamburger.classList.toggle('hidden');
     });
 
+    window.addEventListener('scroll', () => {
+    const sections = [
+        { id: 'about', link: 'intro-li' },
+        { id: 'skills', link: 'skills-li' },
+        { id: 'work-experience', link: 'work-li' },
+        { id: 'projects', link: 'projects-li' }
+    ];
+
+    const midOfScreen = window.innerHeight / 2;
+    let currentSection = null;
+
+    sections.forEach(section => {
+        const el = document.getElementById(section.id);
+        const rect = el.getBoundingClientRect();
+
+        if (rect.top <= midOfScreen && rect.bottom >= midOfScreen) {
+        currentSection = section.link;
+        }
+    });
+
+    document.querySelectorAll('#links > li').forEach(li =>
+        li.classList.remove('current-view')
+    );
+
+    if (currentSection) {
+        const activeLi = document.getElementById(currentSection);
+        if (activeLi) activeLi.classList.add('current-view');
+    }
+    });
+
+    
 </script>

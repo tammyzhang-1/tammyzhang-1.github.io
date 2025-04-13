@@ -111,7 +111,6 @@ body {
     font-size: 3em;
     cursor: pointer;
     margin: 0.5em 1.15em;
-    /* background: white; */
     color: #949494;
     position: fixed;
     top: 0;
@@ -155,6 +154,10 @@ body {
     line-height: 1.75;
 }
 
+#links li {
+    list-style-type: circle;
+}
+
 #nav.lora-regular {
     font-size: 1.1em;
     color: white;
@@ -168,11 +171,7 @@ body {
     color: rgb(224, 224, 224);
 }
 
-.unselected-view {
-    list-style-type: circle;
-}
-
-.current-view {
+#links li.current-view {
     list-style-type: disc;
 }
 
@@ -205,7 +204,6 @@ body {
 }
 
 p, ul li {
-    /* font-family: "Lora", serif; */
     font-family: 'Figtree', sans-serif;
 }
 
@@ -267,6 +265,7 @@ h2 {
     display: flex;
     align-items: center;
     gap: 1.5em;
+    justify-content: flex-start;
 }
 
 #work-experience h3 {
@@ -277,7 +276,9 @@ h2 {
 }
 
 .company-logo {
-    max-height: 2em;
+    height: 2em;
+    min-width: 7em;
+    max-width: 7em;
     width: 7em;
     display: flex;
     flex-direction: column;
@@ -286,14 +287,14 @@ h2 {
 }
 
 .company-logo img {
-    display: block;
-    max-height: 2em;
-    width: auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .company-name {
     font-weight: 600;
     color: #474747;
+    width: 80%;
 }
 
 #work-experience p.company-timespan {
@@ -318,7 +319,6 @@ h2 {
     aspect-ratio: 1.15/1;
     width: 32%;
     border-radius: 0.75em;
-    /* padding: 0.5em; */
     box-shadow: 0 0 0.5em #e4e4e4;
 }
 
@@ -365,6 +365,10 @@ footer {
     #landing {
         padding: 0 8em 0 10em;
         gap: 7em;
+    }
+
+    #img-container {
+        max-width: 45%;
     }
 
     #about, #skills, #work-experience, #projects {
@@ -419,6 +423,10 @@ footer {
         padding: 0 5em 0 6em;
     }
 
+    #img-container {
+        max-width: 40%;
+    } 
+
     #about, #skills, #work-experience, #projects {
         padding: 0 5em 0 6em;
     }
@@ -437,9 +445,11 @@ footer {
 }
 
 @media (max-width: 885px) { 
+
     .project-card {
         width: 48%;
     }
+
     .skill-icon {
         width: 12%;
     }
@@ -447,13 +457,23 @@ footer {
 
 @media (max-width: 840px) {
     #landing {
-        padding: 5em 5em 0 6em;
-        height: auto;
+        padding: 4em 5em 0 6em;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 1em;
+        align-items: center;
     }  
 
+    #text {
+        align-items: center;
+    }
+
+    #landing .libre-bodoni-italic {
+        padding: 0 0.5em 0 0.5em;
+    }
+
     #img-container {
-        max-width: 36%;
-        transform: translateY(-4em);
+        max-width: 50%;
     }
 
     #landing .libre-bodoni-italic {
@@ -474,12 +494,21 @@ footer {
 }
 
 @media (max-width: 710px) {
-    #landing {
-        gap: 5em;
-    }
-
     .hamburger {
         font-size: 2em;
+    }
+
+    #landing {
+        padding: 4em 1em 1em 1em;
+        height: auto;
+    }
+
+    #about, #skills, #work-experience, #projects {
+        padding: 0 3em 0 4em;
+    }
+
+    footer {
+        padding: 2em 3em 2em 4em;
     }
 
     #landing .libre-bodoni-italic {
@@ -490,6 +519,15 @@ footer {
         font-size: 36px;
     }
 
+    #text {
+        width: 100%;
+    }
+
+    #text .fira-mono-regular {
+        white-space: wrap;
+        text-align: center;
+    }
+
     #skill-icons {
         gap: 0.5em;
     }
@@ -498,7 +536,72 @@ footer {
         width: 15%;
     }
 
-    #about p, #about ul li, #work-experience p, #work-experience ul li, #work-experience h3 {
+    #about p, #about ul li, #work-experience p, #work-experience ul li, #work-experience h3, footer {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 550px) {
+    #project-gallery {
+        gap: 1em;
+    }
+
+    .project-card {
+        width: 98%;
+        box-shadow: 0 0 0.5em #b1b1b1;
+    }
+
+    .skill-icon {
+        width: 18%;
+    }
+}
+
+@media (max-width: 445px) {
+    .position {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .experience-section {
+        border-bottom: solid thin #c7c7c7;
+    }
+}
+
+@media (max-width: 370px) {
+    #img-container {
+        max-width: 65%;
+    }
+
+    .hamburger {
+        background-color: rgba(255, 255, 255, 0.85);
+        display: flex;             
+        align-items: center;       
+        justify-content: center;
+        padding: 0.1em;
+        margin: 0.5em 0.5em;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+    }
+
+    #landing .libre-bodoni-italic {
+        font-size: 96px; 
+    }
+
+    #text .lora-regular {
+        font-size: 28px;
+    }
+
+    #text .fira-mono-regular {
+        font-size: 14px;
+    }
+
+    #about, #skills, #work-experience, #projects {
+        padding: 0 2em 0 2em;
+    }
+
+    footer {
+        padding: 1em 2em 2em 2em;
     }
 }
