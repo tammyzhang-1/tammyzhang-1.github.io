@@ -512,7 +512,7 @@ footer {
     }
 
     #landing .libre-bodoni-italic {
-        padding: 0em;
+        padding: 0 0.1em 0 0.1em;
         font-size: 136px; 
     }
 
@@ -647,12 +647,11 @@ footer {
 
 }
 
-@media (max-width: 385px) {
+@media (max-width: 395px) {
     #img-container {
         max-width: 65%;
     }
 
-    
     #landing .libre-bodoni-italic {
         font-size: 96px; 
     }
