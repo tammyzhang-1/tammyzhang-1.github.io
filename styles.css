@@ -1,3 +1,10 @@
+:root {
+    --skills-per-row: 8;
+    --skills-gap: 1em;
+    --projects-per-row: 3;
+    --projects-gap: 1em;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -8,7 +15,7 @@ html {
 }
 
 body {
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
     height: 100%;
@@ -103,7 +110,10 @@ body {
 
 #headshot {
     display: block;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1 !important;
+    height: auto;
+    width: 100%;
+    max-height: 100%;
 }
 
 .hamburger {
@@ -228,10 +238,11 @@ h2 {
 #skill-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: var(--skills-gap);
 }
 
 .skill-icon {
+    box-sizing: border-box;
     border: thin solid #f4f4f4;
     border-radius: 1em;
     padding: 0.25em;
@@ -240,7 +251,8 @@ h2 {
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    width: 9%;
+    flex: 0 0 auto;
+    width: calc((100% - (var(--skills-gap) * (var(--skills-per-row) - 1))) / var(--skills-per-row));
     box-shadow: 0 0 0.5em #e4e4e4;
 }
 
@@ -308,7 +320,7 @@ h2 {
 #project-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: var(--projects-gap);
 }
 
 .project-card {
@@ -317,7 +329,7 @@ h2 {
     align-items: center;
     justify-content: center;
     aspect-ratio: 1.15/1;
-    width: 32%;
+    width: calc(100% / var(--projects-per-row) - (var(--projects-gap) * (var(--projects-per-row) - 1) / var(--projects-per-row)));
     border-radius: 0.75em;
     box-shadow: 0 0 0.5em #e4e4e4;
 }
@@ -332,6 +344,44 @@ h2 {
 
 footer {
     padding: 2em 0 2em 20em;
+}
+
+@media (min-width: 1920px) {
+    html {
+        background-color: rgb(241, 241, 241);
+    }
+
+    #landing {
+        height: auto;
+        width: 1920px;
+        gap: 2em;
+        padding: 5em 0 0 25em;
+    }
+
+    #about, #skills, #work-experience, #projects {
+        padding: 0 8em 0 25em;
+    }
+
+    footer {
+        padding: 2em 0 2em 25em;
+    }
+
+    .img-container {
+        max-width: 530px;
+    }
+
+    body {
+        max-width: 1920px;
+    }
+
+    main {
+        border-right: solid thin #949494;
+        background-color: white;
+    }
+
+    #nav {
+        left: calc((100vw - 1920px) / 2);
+    }
 }
 
 @media (max-width: 1350px) {
@@ -409,12 +459,9 @@ footer {
         font-size: 16px;
     }
 
-    .skill-icon {
-        width: 10%;
-    }
-
-    .project-card {
-        width: 31%;
+    :root {
+        --skills-per-row: 7;
+        --skills-gap: 0.75rem;
     }
 }
 
@@ -439,19 +486,15 @@ footer {
         margin: 0.5em 0.5em;
     }
 
-    #project-gallery {
-        gap: 0.5em;
+    :root {
+        --projects-gap: 0.5em;
     }
 }
 
 @media (max-width: 885px) { 
-
-    .project-card {
-        width: 48%;
-    }
-
-    .skill-icon {
-        width: 12%;
+    :root {
+        --skills-per-row: 6;
+        --projects-per-row: 2;
     }
 }
 
@@ -469,15 +512,12 @@ footer {
     }
 
     #landing .libre-bodoni-italic {
-        padding: 0 0.5em 0 0.5em;
+        padding: 0em;
+        font-size: 136px; 
     }
 
     #img-container {
         max-width: 50%;
-    }
-
-    #landing .libre-bodoni-italic {
-        font-size: 136px; 
     }
 
     #text .lora-regular {
@@ -489,7 +529,12 @@ footer {
     }
 
     .skill-icon {
-        font-size: 0.9em;
+        font-size: 0.9rem;
+        width: calc((100% - (var(--skills-gap) * (var(--skills-per-row) - 1))) / var(--skills-per-row));
+    }
+
+    :root {
+        --skills-per-row: 6;
     }
 }
 
@@ -524,16 +569,13 @@ footer {
     }
 
     #text .fira-mono-regular {
-        white-space: wrap;
+        white-space: normal;
         text-align: center;
+        font-size: 14px;
     }
 
-    #skill-icons {
-        gap: 0.5em;
-    }
-
-    .skill-icon {
-        width: 15%;
+    :root {
+        --skills-gap: 0.5rem;
     }
 
     #about p, #about ul li, #work-experience p, #work-experience ul li, #work-experience h3, footer {
@@ -541,18 +583,30 @@ footer {
     }
 }
 
+@media (max-width: 650px) {
+    :root {
+        --skills-per-row: 5;
+    }
+}
+
 @media (max-width: 550px) {
-    #project-gallery {
-        gap: 1em;
+    :root {
+        --project-gap: 0.5rem;
+        --projects-per-row: 1;
     }
 
     .project-card {
-        width: 98%;
         box-shadow: 0 0 0.5em #b1b1b1;
     }
 
     .skill-icon {
-        width: 18%;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 470px) {
+    :root {
+        --skills-per-row: 4;
     }
 }
 
@@ -565,12 +619,6 @@ footer {
 
     .experience-section {
         border-bottom: solid thin #c7c7c7;
-    }
-}
-
-@media (max-width: 370px) {
-    #img-container {
-        max-width: 65%;
     }
 
     .hamburger {
@@ -585,6 +633,26 @@ footer {
         border-radius: 50%;
     }
 
+    #about, #skills, #work-experience, #projects {
+        padding: 0 1.5em 0 1.5em;
+    }
+
+    footer {
+        padding: 1em 1.5em 2em 1.5em;
+    }
+
+    :root {
+        --skills-per-row: 5;
+    }
+
+}
+
+@media (max-width: 385px) {
+    #img-container {
+        max-width: 65%;
+    }
+
+    
     #landing .libre-bodoni-italic {
         font-size: 96px; 
     }
@@ -597,11 +665,13 @@ footer {
         font-size: 14px;
     }
 
-    #about, #skills, #work-experience, #projects {
-        padding: 0 2em 0 2em;
+    :root {
+        --skills-per-row: 4;
     }
+}
 
-    footer {
-        padding: 1em 2em 2em 2em;
+@media (max-width: 320px) {
+    :root {
+        --skills-per-row: 3;
     }
 }
