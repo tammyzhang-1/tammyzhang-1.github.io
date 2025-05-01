@@ -317,6 +317,44 @@ h2 {
     color: #949494;
 }
 
+#filter-chips {
+    display: flex;
+    gap: 0.5em;
+    margin: 1em 0;
+    align-items: center;
+}
+
+.chip {
+    font-family: 'Fira Mono', serif;
+    padding: 0.25em 1em;
+    border-radius: 0.75em;
+    background-color: #f4f4f4;
+    color: #474747;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: thin solid #c6c6c6;
+}
+
+.chip:hover {
+    background-color: #a2b4cd;
+    color: white;
+}
+
+.chip.active {
+    background-color: #889EBD;
+    color: white;
+}
+
+#clear-selection {
+    display: none; 
+    font-family: 'Figtree', sans-serif;
+    cursor: pointer; 
+    margin-left: 10px; 
+    font-size: 0.9em; 
+    color: #889EBD; 
+    text-decoration: underline;
+}
+
 #project-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -613,6 +651,10 @@ footer {
     .skill-icon {
         font-size: 0.75rem;
     }
+
+    .chip {
+        font-size: 0.75em;
+    }
 }
 
 @media (max-width: 470px) {
@@ -677,6 +719,11 @@ footer {
 
     :root {
         --skills-per-row: 4;
+    }
+
+    .chip {
+        font-size: 0.65em;
+        padding: 0.25em 0.5em;
     }
 }
 

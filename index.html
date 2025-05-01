@@ -206,7 +206,7 @@
                         <img src="images/labofornithology.png" alt="Cornell Lab of Ornithology logo" />
                     </div>
                     <div class="company-text">
-                        <h3>Media Curator at the <span class="company-name">Cornell Lab of Ornithology</span></h3>
+                        <h3>Website Media Curator at the <span class="company-name">Cornell Lab of Ornithology</span></h3>
                         <p class="company-timespan">Jan 2021 - Aug 2023</p>
                     </div>
                 </div>
@@ -236,79 +236,85 @@
         </div>
         <div class="page-section" id="projects">
             <h2 class="libre-bodoni-italic">portfolio</h2>
-            <p class="fira-mono-regular">
-            </p>
+            <div id="filter-chips">
+                <button class="chip category-interactive">Interactive Visualization</button>
+                <button class="chip category-analysis">Data Analysis</button>
+                <button class="chip category-webdev">Web Development</button>
+                <span id="clear-selection">
+                  Clear Selection
+                </span>
+              </div>
             <div id="project-gallery">
-                <a class="project-card" href="https://visualizations.ucar.edu/" target="_blank">
+                <a class="project-card category-webdev" href="https://visualizations.ucar.edu/" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/cisl-viz-gallery.mp4" type="video/mp4">
                         </video>
                     </div>
                 </a>
-                <a class="project-card" href="https://ncar.github.io/utorview-forecast/" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://ncar.github.io/utorview-forecast/" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/utorview-react.mp4" type="video/mp4">
                         </video>
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/hurricanes/" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://tammy-zhang.com/hurricanes/" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/hurricanes-1.mp4" type="video/mp4">
                         </video>                
                     </div>
                 </a>
-                <a class="project-card" href="https://ncar.github.io/interactives/windspeed/index.html" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://ncar.github.io/interactives/windspeed/index.html" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/wind-scrolly.mp4" type="video/mp4">
                         </video>
                     </div>
                 </a>
-                <a class="project-card" href="https://ncar.github.io/interactives/watervapor/index.html" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://ncar.github.io/interactives/watervapor/index.html" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/water-vapor.mp4" type="video/mp4">
                         </video>
                     </div>
                 </a>
-                <a class="project-card" href="https://github.com/tammyzhang-1/d3-CESM-tiling" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://github.com/tammyzhang-1/d3-CESM-tiling" target="_blank">
                     <div>
                         <img class="project-cover" src="images/cesm2.png" alt="CESM2 tiling project" />
                     </div>
                 </a>
-                <a class="project-card" href="https://github.com/tammyzhang-1/aimpower-cornell-2024" target="_blank">
+                <a class="project-card category-webdev" href="https://github.com/tammyzhang-1/aimpower-cornell-2024" target="_blank">
                     <div>
                         <img class="project-cover" src="images/aimpower.png" alt="AImpower project" />
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/reddit-text-viz/" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://tammy-zhang.com/reddit-text-viz/" target="_blank">
                     <div>
                         <img class="project-cover" src="images/reddit-text-viz.png" alt="Reddit text visualization" />
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/final-digital-destination/" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://tammy-zhang.com/final-digital-destination/" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/final-digital-destination.mp4" type="video/mp4">
                         </video>
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/nct-force/" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://tammy-zhang.com/nct-force/" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/nct-force.mp4" type="video/mp4">
                         </video>
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/boston-restaurants/" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://tammy-zhang.com/boston-restaurants/" target="_blank">
                     <div>
                         <img class="project-cover" src="images/boston-restaurants.png" alt="Boston restaurants project" />
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/global-human-day/" target="_blank">
+                <a class="project-card category-webdev category-interactive" href="https://tammy-zhang.com/global-human-day/" target="_blank">
                     <div>
                         <video class="project-cover" autoplay playsinline muted loop>
                             <source src="images/global-human-day.mp4" type="video/mp4">
@@ -320,17 +326,17 @@
                         <img class="project-cover" src="images/san-francisco-trees.png" alt="San Francisco trees project" />
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/superbloom/" target="_blank">
+                <a class="project-card category-webdev" href="https://tammy-zhang.com/superbloom/" target="_blank">
                     <div>
                         <img class="project-cover" src="images/superbloom.png" alt="Superbloom project" />
                     </div>
                 </a>
-                <a class="project-card" href="https://github.com/tammyzhang-1/thousand-year-flood/blob/main/1000_year_flood.ipynb" target="_blank">
+                <a class="project-card category-analysis" href="https://github.com/tammyzhang-1/thousand-year-flood/blob/main/1000_year_flood.ipynb" target="_blank">
                     <div>
                         <img class="project-cover" src="images/thousand-year-flood.png" alt="Thousand year flood project" />
                     </div>
                 </a>
-                <a class="project-card" href="https://tammy-zhang.com/cornell-crime-map/" target="_blank">
+                <a class="project-card category-webdev" href="https://tammy-zhang.com/cornell-crime-map/" target="_blank">
                     <div>
                         <img class="project-cover" src="images/cornell-crime-map.png" alt="Cornell crime map" />
                     </div>
@@ -340,9 +346,24 @@
                         <img class="project-cover" src="images/van-gogh-colors.png" alt="Van Gogh colors project" />
                     </div>
                 </a>
-                <a class="project-card" href="https://github.com/tammyzhang-1/cherry-blossoms/blob/main/Final%20Project.ipynb" target="_blank">
+                <a class="project-card category-analysis" href="https://github.com/tammyzhang-1/cherry-blossoms/blob/main/Final%20Project.ipynb" target="_blank">
                     <div>
                         <img class="project-cover" src="images/cherry-blossoms.png" alt="Cherry blossoms project" />
+                    </div> 
+                </a>
+                <a class="project-card category-analysis" href="https://www.donorschoose.org/" target="_blank">
+                    <div>
+                        <img class="project-cover" src="images/donors-choose.png" alt="Donors choose" />
+                    </div> 
+                </a>
+                <a class="project-card" href="https://birdsoftheworld.org/bow/home" target="_blank">
+                    <div>
+                        <img class="project-cover" src="images/case-study/bow/2.png" alt="Birds of the world" />
+                    </div> 
+                </a>
+                <a class="project-card category-analysis" href="https://github.com/tammyzhang-1/feederwatch-analysis/tree/main" target="_blank">
+                    <div>
+                        <img class="project-cover" src="images/feederwatch.png" alt="Project feederwatch" />
                     </div> 
                 </a>
             </div>
@@ -406,6 +427,39 @@
         const activeLi = document.getElementById(currentSection);
         if (activeLi) activeLi.classList.add('current-view');
     }
+    });
+
+    const chips = document.querySelectorAll('#filter-chips .chip');
+    const cards = document.querySelectorAll('.project-card');
+    const clearBtn = document.getElementById('clear-selection');
+
+    function updateFilter() {
+        const activeCategories = Array.from(chips)
+                                      .filter(chip => chip.classList.contains('active'))
+                                      .map(chip => Array.from(chip.classList).find(cls => cls.startsWith('category-')));
+
+        if (activeCategories.length === 0) {
+            cards.forEach(card => card.style.display = '');
+            clearBtn.style.display = 'none';
+        } else {
+            cards.forEach(card => {
+                const matches = activeCategories.some(category => card.classList.contains(category));
+                card.style.display = matches ? '' : 'none';
+            });
+            clearBtn.style.display = 'inline';
+        }
+    }
+
+    chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            chip.classList.toggle('active');
+            updateFilter();
+        });
+    });
+
+    clearBtn.addEventListener('click', () => {
+        chips.forEach(chip => chip.classList.remove('active'));
+        updateFilter();
     });
 
     
