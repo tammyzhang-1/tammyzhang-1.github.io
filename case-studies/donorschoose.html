@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Zhang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="lora-regular" id="nav">
+        <span id="close">&times;</span>
+        <div class="vertical-line">
+        </div>
+        <nav>
+            <ul id="links">
+                <li id="intro-li"><a href="../index.html#about">about me</a></li>
+                <li id="skills-li"><a href="../index.html#skills">skills</a></li>
+                <li id="work-li"><a href="../index.html#work-experience">experience</a></li>
+                <li id="projects-li"><a href="../index.html#projects">portfolio</a></li>
+            </ul>
+          <ul id="nav-icons">
+              <li><a href="mailto:tz332@cornell.edu"><img src="../images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
+              <li><a href="https://www.linkedin.com/in/tammy-zhang/" target="_blank"><img src="../images/linkedin.png" alt="linkedin" width="35" height="35" title="Link to my LinkedIn profile"/></a></li>
+              <li><a href="https://github.com/tammyzhang-1"><img src="../images/github.png" alt="github" width="35" height="35" title="Link to my GitHub profile" /></a></li>
+              <li><a href="documents/ZhangTammy-Resume.pdf"><img src="../images/resume.png" alt="resume" width="45" height="45" title="See my resume" /></a></li>
+          </ul>
+        </nav>
+        <div class="vertical-line"></div>
+    </div>
+
+    <main class="detail-page">
+        <header class="page-header">
+            <h1>DonorsChoose</h1>
+            <h2>Using Python to analyze business data</h2>
+        </header>   
+        <div id="detail-tags">
+            <div class="tag">Data Analysis</div>
+            <div class="tag">Python</div>
+            <div class="tag">pandas</div>
+            <div class="tag">NumPy</div>
+            <div class="tag">matplotlib</div>
+            <div class="tag">seaborn</div>
+        </div>
+        <div class="detail-intro">
+            <p>Completed as a final project for Cornell's NBA 6215 course in Fall 2024, this project involved analyzing data from <a href="https://www.donorschoose.org/">DonorsChoose</a>, a nonprofit organization that connects teachers in high-need communities with donors who want to help.
+               The goal was to identify trends in donor characteristics and to provide insights on factors related to campaign success.</p>
+        </div>
+        <div class="detail-image-gallery">
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/1.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/2.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/3.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/4.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/5.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/6.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/7.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/8.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/9.jpg" alt="DonorsChoose data analysis" />
+            </div>
+            <div class="detail-image">
+                <img src="../images/case-study/donorschoose/10.jpg" alt="DonorsChoose data analysis" />
+            </div>
+        </div>
+
+        <footer>
+            <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('nav');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+</script>

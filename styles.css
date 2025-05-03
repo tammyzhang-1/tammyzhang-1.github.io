@@ -209,7 +209,25 @@ body {
     border-right: solid thin white;
 }
 
-#about, #skills, #work-experience, #projects {
+#detail-links {
+    padding-inline-start: 10px;
+}
+
+#back-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.page-section h2 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    /* text-align: center; */
+}
+
+#about, #skills, #work-experience, #projects, .detail-page {
     padding: 0 8em 0 20em;
 }
 
@@ -325,7 +343,7 @@ h2 {
 }
 
 .chip {
-    font-family: 'Fira Mono', serif;
+    font-family: 'Figtree', sans-serif;
     padding: 0.25em 1em;
     border-radius: 0.75em;
     background-color: #f4f4f4;
@@ -395,6 +413,22 @@ footer {
     padding: 2em 0 2em 20em;
 }
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0.6;
+        transform: translateY(8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; 
+}
+
 @media (min-width: 1920px) {
     html {
         background-color: rgb(241, 241, 241);
@@ -407,7 +441,7 @@ footer {
         padding: 5em 0 0 25em;
     }
 
-    #about, #skills, #work-experience, #projects {
+    #about, #skills, #work-experience, #projects, .detail-page {
         padding: 0 8em 0 25em;
     }
 
@@ -439,7 +473,7 @@ footer {
         gap: 3em;
     }
 
-    #about, #skills, #work-experience, #projects {
+    #about, #skills, #work-experience, #projects, .detail-page {
         padding: 0 8em 0 17em;
     }
 
@@ -470,7 +504,7 @@ footer {
         max-width: 45%;
     }
 
-    #about, #skills, #work-experience, #projects {
+    #about, #skills, #work-experience, #projects, .detail-page {
         padding: 0 8em 0 10em;
     }
 
@@ -523,7 +557,7 @@ footer {
         max-width: 40%;
     } 
 
-    #about, #skills, #work-experience, #projects {
+    #about, #skills, #work-experience, #projects, .detail-page {
         padding: 0 5em 0 6em;
     }
 
@@ -597,7 +631,7 @@ footer {
         height: auto;
     }
 
-    #about, #skills, #work-experience, #projects {
+    #about, #skills, #work-experience, #projects, .detail-page {
         padding: 0 3em 0 4em;
     }
 
@@ -627,7 +661,7 @@ footer {
         --skills-gap: 0.5rem;
     }
 
-    #about p, #about ul li, #work-experience p, #work-experience ul li, #work-experience h3, footer {
+    #about p, #about ul li, #work-experience p, #work-experience ul li, #work-experience h3, footer, .detail-page footer, .detail-page p {
         font-size: 1em;
     }
 }
@@ -686,7 +720,7 @@ footer {
         border-radius: 50%;
     }
 
-    #about, #skills, #work-experience, #projects {
+    #about, #skills, #work-experience, #projects, .detail-page {
         padding: 0 1.5em 0 1.5em;
     }
 
