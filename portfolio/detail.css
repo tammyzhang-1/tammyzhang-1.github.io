@@ -15,6 +15,25 @@ main.detail-page footer {
     top: 0;
 }
 
+.home-arrow {
+    height: 0.5rem;
+}
+
+.home-arrow path {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.home-link {
+    display: inline-flex;
+    align-items: center;
+    height: 1rem;
+    gap: 0.25rem;
+    font-family: 'Figtree', sans-serif;
+    margin: auto;
+    margin-top: 2rem;
+}
+
 main.detail-page h1 {
     font-family: 'Figtree', sans-serif;
     font-weight: 600;
@@ -28,6 +47,43 @@ main.detail-page h2 {
     font-size: 1.75rem;
     font-weight: 300;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main.detail-page p {
+    color: #484848;
+}
+
+main.detail-page a {
+    color: #484848; 
+    text-decoration: underline; 
+    text-decoration-color: #889EBD; 
+    text-decoration-thickness: 3px;
+}
+
+main.detail-page a:hover {
+    color: #6d6d6d;
+    text-decoration-color: #9eb3d1; 
+}
+
+main.detail-page .top-links a {
+    color: #889EBD;
+    display: inline-flex;
+    align-items: center;
+    height: 1rem;
+    text-decoration-thickness: 1px;
+}
+
+main.detail-page .top-links a:hover {
+    color: #9eb3d1;
+}
+
+.external-link-icon {
+    height: 1rem;
+}
+
+.external-link-icon path {
+    stroke: currentColor;
 }
 
 #detail-tags {
@@ -56,7 +112,7 @@ main.detail-page h2 {
     line-height: 2rem;
 }
 
-.detail-image-gallery {
+.detail-image-gallery-medium {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -64,13 +120,17 @@ main.detail-page h2 {
     width: 100%;
 }
 
-.detail-image {
+.detail-image-gallery-medium .detail-image {
     width: calc(100% / 2 - 1rem);
 }
 
-.detail-image-gallery img {
+.detail-image img {
     width: 100%;
     height: auto;
     border: solid thin #eaeaea;
+}
+
+.detail-image-gallery-large .detail-image{
+    padding-bottom: 2.5rem;
 }
 
