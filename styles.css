@@ -220,11 +220,22 @@ body {
     padding: 0.5em 0;
 }
 
+#about a {
+    color: #484848; 
+    text-decoration: underline; 
+    text-decoration-color: #889EBD; 
+    text-decoration-thickness: 2px;
+}
+
+#about a:hover {
+    color: #6d6d6d;
+    text-decoration-color: #9eb3d1; 
+}
+
 .page-section h2 {
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
     font-size: 2em;
-    /* text-align: center; */
 }
 
 #about, #skills, #work-experience, #projects, .detail-page {
@@ -272,6 +283,10 @@ h2 {
     flex: 0 0 auto;
     width: calc((100% - (var(--skills-gap) * (var(--skills-per-row) - 1))) / var(--skills-per-row));
     box-shadow: 0 0 0.5em #e4e4e4;
+}
+
+.skill-icon:hover {
+    cursor: default;
 }
 
 .skill-icon img {
