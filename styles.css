@@ -230,6 +230,7 @@ body {
 #about a:hover {
     color: #6d6d6d;
     text-decoration-color: #9eb3d1; 
+    /* background-color: #ecf2fb; */
 }
 
 .page-section h2 {
@@ -355,6 +356,7 @@ h2 {
     gap: 0.5em;
     margin: 1em 0;
     align-items: center;
+    max-width: 100%;
 }
 
 .chip {
@@ -598,7 +600,7 @@ footer {
 
 @media (max-width: 840px) {
     #landing {
-        padding: 4em 5em 0 6em;
+        padding: 4em 5em 0 5em;
         flex-direction: column-reverse;
         justify-content: flex-end;
         gap: 1em;
@@ -634,6 +636,26 @@ footer {
     :root {
         --skills-per-row: 6;
     }
+
+    .chip, #clear-selection {
+        font-size: 0.75em;
+    }
+
+    .page-section h2 {
+        text-align: center;
+    }
+
+    #about, #skills, #work-experience, #projects, .detail-page {
+        padding: 0 5em 0 5em;
+    }
+
+    #filter-chips {
+        justify-content: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 710px) {
@@ -647,7 +669,7 @@ footer {
     }
 
     #about, #skills, #work-experience, #projects, .detail-page {
-        padding: 0 3em 0 4em;
+        padding: 0 3em 0 3em;
     }
 
     footer {
@@ -685,6 +707,11 @@ footer {
     :root {
         --skills-per-row: 5;
     }
+
+    #filter-chips {
+        flex-wrap: wrap;
+        gap: 0.25em;
+    }
 }
 
 @media (max-width: 550px) {
@@ -699,10 +726,6 @@ footer {
 
     .skill-icon {
         font-size: 0.75rem;
-    }
-
-    .chip {
-        font-size: 0.75em;
     }
 }
 
