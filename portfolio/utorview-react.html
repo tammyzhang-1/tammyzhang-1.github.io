@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Zhang - React Tornado Viewer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="lora-regular" id="nav">
+        <span id="close">&times;</span>
+        <div class="vertical-line">
+        </div>
+        <nav style="width: 126.5px; text-align: center;">
+            <a class="home-link" href="../index.html">
+                <svg class="home-arrow" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-triangle-left" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1235</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M3.446,10.052 C2.866,9.471 2.866,8.53 3.446,7.948 L9.89,1.506 C10.471,0.924 11.993,0.667 11.993,2.506 L11.993,15.494 C11.993,17.395 10.472,17.076 9.89,16.495 L3.446,10.052 L3.446,10.052 Z" fill="#ffffff" class="si-glyph-fill"> </path> </g> </g></svg>
+                 home
+            </a>
+          <ul id="nav-icons">
+              <li><a href="mailto:tz332@cornell.edu"><img src="../images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
+              <li><a href="https://www.linkedin.com/in/tammy-zhang/" target="_blank"><img src="../images/linkedin.png" alt="linkedin" width="35" height="35" title="Link to my LinkedIn profile"/></a></li>
+              <li><a href="https://github.com/tammyzhang-1"><img src="../images/github.png" alt="github" width="35" height="35" title="Link to my GitHub profile" /></a></li>
+              <li><a href="documents/ZhangTammy-Resume.pdf"><img src="../images/resume.png" alt="resume" width="45" height="45" title="See my resume" /></a></li>
+          </ul>
+        </nav>
+        <div class="vertical-line"></div>
+    </div>
+
+    <main class="detail-page">
+        <header class="page-header">
+            <h1>React Tornado Viewer</h1>
+            <h2>Visualizing Tornado Forecast Models for Meteorologists</h2>
+            <p class="top-links"><a target=_blank href="https://ncar.github.io/utorview-forecast/">Live site <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>, 
+                <a target=_blank href="https://github.com/tammyzhang-1/utorview-react">code <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+            </p>
+        </header>   
+        <div id="detail-tags">
+            <div class="tag">Work Experience</div>
+            <div class="tag">Interactive Data Visualization</div>
+            <div class="tag">React</div>
+            <div class="tag">Next.js</div>
+            <div class="tag">Plotly.js</div>
+            <div class="tag">Azure</div>
+            <div class="tag">MUI</div>
+            <div class="tag">TanStack Query</div>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/utorview-react/1.png" alt="React tornado viewer" />
+        </div>
+        <div class="detail-intro" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+            <p>I completed this visualization for the Machine Integration and Learning for Earth Systems (MILES) group at the <a href="https://ncar.ucar.edu/">National Center for Atmospheric Research</a> (NCAR) in Winter 2023.</p> 
+
+            <p>In weather forecasting, <em>init time</em> refers to the time at which a model run is initialized, while <em>valid time</em> refers to the time whose weather the model is predicting for.
+                
+            <p>Sometimes, forecasters may be interested in how models for the same <em>valid time</em> may change over the course of different <em>init times</em> - for example, does a model get more accurate as it is ran closer to the time it is attempting to forecast? </p>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/utorview-react/2.png" alt="React tornado viewer" />
+        </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 0rem;">
+           <p>My task was to redesign and develop an existing web visualization showing machine learning model prediction outputs of tornadoes on a map (see below). This original version required users to choose a model run time from a dropdown menu and then a forecast hour from second dropdown menu. 
+
+            I was tasked with creating a new version that would allow meteorologists to select one fixed valid time and see how models for this valid time changed as they were initialized at different times.</p>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/utorview-react/3.png" alt="React tornado viewer" />
+        </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 0rem;">
+            <p>To begin the redesign process, I held workshops with meteorologists where we discussed some of the other tools that they use to visualize model outputs. Looking at examples such as <a href="https://www.pivotalweather.com/model.php">Pivotal Weather</a>, I identified key user interface features such as a slider that allows users to smoothly compare geospatial output over time.</p>
+            <p>After these workshops, I produced interactive mockups in Figma and sent them to scientists for feedback and iteration until we felt that the prototypes were ready for development.</p>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/utorview-react/4.png" alt="React tornado viewer" />
+        </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 0rem;">
+            <p>This visualization presented some interesting technical challenges since the model datasets consisted of Messagepack files stored in an Azure cloud storage bucket, indexed by their init time and forecast hour. 
+                In plain English, this meant that the datasets were all stored in small separate parts, and their file names didn't include the valid time that they were predicting for.
+                As a result, I had to write several custom JavaScript functions that would take in a valid time and generate a list of all the files that were needed to generate the visualization requested by the user.
+            </p>
+            <p>I later presented a poster at the American Meteorological Society's Annual Meeting and Student Conference in February 2024 comparing this project to another case study I completed while working at NSF NCAR.</p>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/utorview-react/5.png" alt="React tornado viewer" />
+        </div>
+        <footer>
+            <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('nav');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+</script>
