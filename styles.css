@@ -243,8 +243,12 @@ body {
     padding: 0 8em 0 20em;
 }
 
-p, ul li {
+p, ul li, ol li {
     font-family: 'Figtree', sans-serif;
+}
+
+ol li {
+    line-height: 2;
 }
 
 #about p, #about ul li, #work-experience p, #work-experience ul li {

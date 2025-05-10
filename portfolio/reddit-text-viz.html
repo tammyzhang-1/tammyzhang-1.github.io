@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Zhang - Reddit Text Viz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="lora-regular" id="nav">
+        <span id="close">&times;</span>
+        <div class="vertical-line">
+        </div>
+        <nav style="width: 126.5px; text-align: center;">
+            <a class="home-link" href="../index.html">
+                <svg class="home-arrow" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-triangle-left" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1235</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M3.446,10.052 C2.866,9.471 2.866,8.53 3.446,7.948 L9.89,1.506 C10.471,0.924 11.993,0.667 11.993,2.506 L11.993,15.494 C11.993,17.395 10.472,17.076 9.89,16.495 L3.446,10.052 L3.446,10.052 Z" fill="#ffffff" class="si-glyph-fill"> </path> </g> </g></svg>
+                 home
+            </a>
+          <ul id="nav-icons">
+              <li><a href="mailto:tz332@cornell.edu"><img src="../images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
+              <li><a href="https://www.linkedin.com/in/tammy-zhang/" target="_blank"><img src="../images/linkedin.png" alt="linkedin" width="35" height="35" title="Link to my LinkedIn profile"/></a></li>
+              <li><a href="https://github.com/tammyzhang-1"><img src="../images/github.png" alt="github" width="35" height="35" title="Link to my GitHub profile" /></a></li>
+              <li><a href="documents/ZhangTammy-Resume.pdf"><img src="../images/resume.png" alt="resume" width="45" height="45" title="See my resume" /></a></li>
+          </ul>
+        </nav>
+        <div class="vertical-line"></div>
+    </div>
+
+    <main class="detail-page">
+        <header class="page-header">
+            <h1>Reddit Text Viz</h1>
+            <h2>Using NLP to visualize user comments on r/AskReddit</h2>
+            <p class="top-links"><a target=_blank href="https://tammy-zhang.com/reddit-text-viz/">Live site <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>, 
+                <a target=_blank href="https://github.com/tammyzhang-1/reddit-text-viz">code <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>,
+                <a target=_blank href="https://github.com/tammyzhang-1/reddit-text-viz/blob/main/notebook.ipynb">data processing and full report <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+            </p>
+        </header>   
+        <div id="detail-tags">
+            <div class="tag">Academic Project</div>
+            <div class="tag">Interactive Data Visualization</div>
+            <div class="tag">Natural Language Processing</div>
+            <div class="tag">Python</div>
+            <div class="tag">D3.js</div>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/reddit-text-viz/1.png" alt="NSF NCAR visualization gallery" />
+        </div>
+        <div class="detail-intro" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+            <p>Text is particularly challenging to visualize due to how unstructured and high-dimensional it is - but in today's Internet age, much information, particularly user-generated content, is produced in a text format.</p>
+            <p>This user-generated content may carry important information on current social/economic/emotional landscapes and trends, but run the risk of being completely buried, lost, and overlooked due to the sheer quantity of text that is produced every day.</p>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/reddit-text-viz/4.png" alt="NSF NCAR visualization gallery" />
+        </div>
+        <div class="detail-intro" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+            <p>One such example of a source of user-generated texts is Reddit, an American social media platform that is currently one of the most visited websites in the world with currently more than 500 million users. The website includes over 100000 subreddits, which form communities of common interest where users can gather to post text, images, and other content regarding particular topics; users often add their own replies under others' posts and to other people's comments as well. Of these subreddits, the second most popular is r/AskReddit with over 55 million members, where users post questions for others to answer.</p>
+            <p>As my final project for Cornell's <em>INFO 6350: Text Mining for History and Literature</em> course in Fall 2024, I chose to complete a case study in using natural language processing methods as part of a workflow for visualizing answers to popular r/AskReddit questions.</p>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/reddit-text-viz/5.png" alt="NSF NCAR visualization gallery" />
+        </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 0rem;">
+            <p>Using comments from five popular questions that naturally map to a U.S. map:</p>
+            <ol>
+                <li><a href="https://www.reddit.com/r/AskReddit/comments/172l3yj/what_do_you_think_is_the_best_us_state/">What do you think is the best U.S. state? (4105 replies)</a></li>
+                <li><a href="https://www.reddit.com/r/AskReddit/comments/1bfq75y/whats_the_one_us_state_you_absolutely_will_never/">What's the one US state you absolutely will never step foot in and why? (10864 replies)</a></li>
+                <li><a href="https://www.reddit.com/r/AskReddit/comments/13mat7e/what_is_perhaps_the_least_talked_about_us_state/">What is perhaps the least talked about US state? (5580 replies)</a></li>
+                <li><a href="https://www.reddit.com/r/AskReddit/comments/4gjd4h/us_redditors_what_does_your_state_do_better_than/">US redditors, what does your state do better than all the others? (7775 replies)</a></li>  
+                <li><a href="https://www.reddit.com/r/AskReddit/comments/3uahca/all_50_states_are_getting_together_for/">All 50 states are getting together for Thanksgiving dinner. What does your state bring and why? (7225 replies)</a></li>
+            </ol>
+            <p>I wrote a set of Python functions that 1.) fetch all comments under a post using Reddit's API; 2.) use spaCy, a Python natural language processing library, to extract certain categories of information and index comments by the U.S. states they mention; 3.) transform this information into a structured json file.</p>
+            <p>In the <a href="https://github.com/tammyzhang-1/reddit-text-viz/blob/main/notebook.ipynb">final script</a>, all that is needed to generate a visualization-ready file is calling one function with the link to the Reddit post of interest.
+            This file can then be passed to a web interface that uses D3.js to build an interactive map.</p>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/reddit-text-viz/2.png" alt="NSF NCAR visualization gallery" />
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/reddit-text-viz/3.png" alt="NSF NCAR visualization gallery" />
+        </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 0rem;">
+            <p></p>
+        </div>
+        <footer>
+            <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('nav');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+</script>
