@@ -124,11 +124,13 @@ main.detail-page .top-links a:hover {
     width: calc(100% / 2 - 1rem);
 }
 
-.detail-image img {
+.detail-image img, .detail-image video {
     width: 100%;
     height: auto;
     border: solid thin #eaeaea;
 }
+
+
 
 .detail-image-gallery-large .detail-image{
     padding-bottom: 2.5rem;
