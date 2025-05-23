@@ -261,8 +261,16 @@ h2 {
     color: #518892;
 }
 
+#about h2 {
+    margin-top: 0;
+}
+
+#skills h2 {
+    padding-bottom: 0.5em;
+}
+
 #skills h2, #work-experience h2, #projects h2 {
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
 #about span {
@@ -278,7 +286,7 @@ h2 {
 .skill-icon {
     box-sizing: border-box;
     border: thin solid #f4f4f4;
-    border-radius: 1em;
+    border-radius: 0.5em;
     padding: 0.25em;
     display: flex;
     flex-direction: column;
@@ -366,17 +374,23 @@ h2 {
 .chip {
     font-family: 'Figtree', sans-serif;
     padding: 0.25em 1em;
-    border-radius: 0.75em;
-    background-color: #f4f4f4;
-    color: #474747;
+    border-radius: 0.5em;
+    /* background-color: #f4f4f4;
+    color: #474747; */
+    background-color: white;
+    /* color: #518892; */
+    color: #949494;
     font-size: 0.9em;
     cursor: pointer;
-    border: thin solid #c6c6c6;
+    /* border: thin solid #c6c6c6; */
+    border: thin solid #949494;
 }
 
 .chip:hover {
     background-color: #a2b4cd;
+    border-color: #a2b4cd;
     color: white;
+    box-shadow: 0 0 0.25em #c3c3c3;
 }
 
 .chip.active {
@@ -401,10 +415,12 @@ h2 {
 }
 
 .project-card {
-    aspect-ratio: 1.15/1;
+    aspect-ratio: 1.25/1;
     width: calc(100% / var(--projects-per-row) - (var(--projects-gap) * (var(--projects-per-row) - 1) / var(--projects-per-row)));
-    border-radius: 0.75em;
-    box-shadow: 0 0 0.5em #e4e4e4;
+    /* border-radius: 0.75em; */
+    /* box-shadow: 0 0 0.5em #e4e4e4; */
+    border: solid 0.5px #d7d7d7;
+    box-sizing: border-box;
 
     height: auto;
 }
@@ -427,7 +443,7 @@ h2 {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.75em;
+    /* border-radius: 0.75em; */
 }
 
 footer {

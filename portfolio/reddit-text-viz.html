@@ -85,6 +85,17 @@
         <div class="detail-intro detail-image">
             <img src="../images/portfolio/reddit-text-viz/3.png" alt="Reddit text viz" />
         </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 0rem;">
+            <p>
+                This visualization has a lot of opportunities for further refinement, especially since spaCy was used here in a basic manner by simply extracting entity names into a list.
+                There are far more advanced NLP tools and methods that could be used to do things like resolving location co-references (in which multiple states are discussed in one comment). 
+                This would help clean up the entities found by spaCy in the sidebar by limiting the text output to only the most relevant entries.                
+            </p>
+            <p>
+                However, there are some interesting patterns that arise by looking at the data this way - for example, we can see discussion noticeably shift to the least populated states when the question is about the least talked about state.
+                Furthermore, comments about the best state tend to mention noteable landmarks and national parks, while comments about a state to never step foot in tend to involve discussion about political alignment and social identity groups.
+            </p>
+        </div>
         <footer>
             <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
         </footer>
