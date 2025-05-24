@@ -383,7 +383,8 @@ h2 {
     font-size: 0.9em;
     cursor: pointer;
     /* border: thin solid #c6c6c6; */
-    border: thin solid #949494;
+    /* border: thin solid #949494; */
+    border: thin solid #d7d7d7;
 }
 
 .chip:hover {

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Zhang - NCT Network</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="lora-regular" id="nav">
+        <span id="close">&times;</span>
+        <div class="vertical-line">
+        </div>
+        <nav style="width: 126.5px; text-align: center;">
+            <a class="home-link" href="../index.html">
+                <svg class="home-arrow" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-triangle-left" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1235</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M3.446,10.052 C2.866,9.471 2.866,8.53 3.446,7.948 L9.89,1.506 C10.471,0.924 11.993,0.667 11.993,2.506 L11.993,15.494 C11.993,17.395 10.472,17.076 9.89,16.495 L3.446,10.052 L3.446,10.052 Z" fill="#ffffff" class="si-glyph-fill"> </path> </g> </g></svg>
+                 home
+            </a>
+          <ul id="nav-icons">
+              <li><a href="mailto:tz332@cornell.edu"><img src="../images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
+              <li><a href="https://www.linkedin.com/in/tammy-zhang/" target="_blank"><img src="../images/linkedin.png" alt="linkedin" width="35" height="35" title="Link to my LinkedIn profile"/></a></li>
+              <li><a href="https://github.com/tammyzhang-1"><img src="../images/github.png" alt="github" width="35" height="35" title="Link to my GitHub profile" /></a></li>
+              <li><a href="../documents/Tammy_Zhang_Resume.pdf"><img src="../images/resume.png" alt="resume" width="45" height="45" title="See my resume" /></a></li>
+          </ul>
+        </nav>
+        <div class="vertical-line"></div>
+    </div>
+
+    <main class="detail-page">
+        <header class="page-header">
+            <h1>NCT Network</h1>
+            <h2>Visualizing collaborations between pop band singers</h2>
+            <p class="top-links"><a target=_blank href="https://tammy-zhang.com/nct-force/">Live site <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>, 
+                <a target=_blank href="https://github.com/tammyzhang-1/nct-force">code <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>            </p>
+        </header>   
+        <div id="detail-tags">
+            <div class="tag">Academic Project</div>
+            <div class="tag">Interactive Data Visualization</div>
+            <div class="tag">D3.js</div>
+        </div>
+        <div class="detail-intro detail-image">
+            <img src="../images/portfolio/nct-network/1.png" alt="NCT network" />
+        </div>
+        <div class="detail-intro" style="padding-top: 1rem; padding-bottom: 0rem;">
+            <p>
+               I completed this project with one other person for Cornell's <em>INFO 4310: Interactive Information Course</em> in Spring 2024;
+               my main responsibility was implementing the network nodes and styling the diagram.
+               The aim of the project was to take an existing interactive data visualization and recreate it in a new form using D3.js.
+            </p>
+            <p>
+                After discussing our topic, we decided to reimagine a <a href="https://github.com/marykolbas/nct-chord/tree/main">personal project</a> that my friend had previously completed visualizing the connections between members of the Korean pop band NCT.
+                This visualization was originally created in the form of a chord diagram after manually scraping song data from Wikipedia, Spotify, and YouTube; we thought it would be interesting to see how the same dataset could look like as a network diagram instead.
+            </p>
+        </div>
+        <div class="detail-intro detail-image" style="padding-top: 1.5rem;">
+            <img src="../images/portfolio/nct-network/2.png" alt="NCT network" />
+        </div>
+        <div class="detail-intro" style="padding-top: 1rem; padding-bottom: 0rem;">
+            <p>
+               NCT has released over 400 songs since they became active in 2016, and also has a unique number of subunits that often promote songs separately. There are over 20 members in the band, some of whom are in multiple subunits,
+               and collaborations between subunits on particular songs are common. We were interested in visualizing these collaborations across the band as a whole and between subunits; furthermore, we wanted to see the song overlaps between members.
+            </p>
+            <p>
+                We started out by going over the original visualization and taking note of several key parts, such as the purpose of the visualization, how different kinds of data were encoded, and the trade-offs made in both the visual design and interaction design.
+                We also noted particular strengths that we wanted to retain, as well as weaknesses that we could address in the new visualization.
+            </p>
+        </div>
+        <div class="detail-intro detail-image" style="padding-top: 1.5rem;">
+            <img src="../images/portfolio/nct-network/3.png" alt="NCT network" />
+        </div>
+         <div class="detail-intro" style="padding-top: 1rem; padding-bottom: 0rem;">
+            <p>
+                In the current version of the site, users can pan and zoom around a network diagram where each node represents an NCT member and each edge represents songs collaborated on by two members.
+                The size of each node encodes the number of songs a member has appeared on in total, and the border color of each node encodes the subunit(s) that a member is part of.
+            </p>
+            <p>
+                When a user hovers over a node, the sidebar populates with more information about that member as well as a bar graph showing the frequency of song collaborations with other members.
+                In this way, it is possible to see which members tend to collaborate with each other the most, as well as which members are overall more active in the band.
+            </p>
+        </div>
+        <footer>
+            <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('nav');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+</script>
