@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Zhang - Cherry Blossoms in Kyoto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="lora-regular" id="nav">
+        <span id="close">&times;</span>
+        <div class="vertical-line">
+        </div>
+        <nav style="width: 126.5px; text-align: center;">
+            <a class="home-link" href="../#projects">
+                <svg class="home-arrow" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-triangle-left" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1235</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M3.446,10.052 C2.866,9.471 2.866,8.53 3.446,7.948 L9.89,1.506 C10.471,0.924 11.993,0.667 11.993,2.506 L11.993,15.494 C11.993,17.395 10.472,17.076 9.89,16.495 L3.446,10.052 L3.446,10.052 Z" fill="#ffffff" class="si-glyph-fill"> </path> </g> </g></svg>
+                 home
+            </a>
+          <ul id="nav-icons">
+              <li><a href="mailto:tz332@cornell.edu"><img src="../images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
+              <li><a href="https://www.linkedin.com/in/tammy-zhang/" target="_blank"><img src="../images/linkedin.png" alt="linkedin" width="35" height="35" title="Link to my LinkedIn profile"/></a></li>
+              <li><a href="https://github.com/tammyzhang-1" target="_blank"><img src="../images/github.png" alt="github" width="35" height="35" title="Link to my GitHub profile" /></a></li>
+              <li><a href="../documents/Tammy_Zhang_Resume.pdf" target="_blank"><img src="../images/resume.png" alt="resume" width="45" height="45" title="See my resume" /></a></li>
+          </ul>
+        </nav>
+        <div class="vertical-line"></div>
+    </div>
+
+    <main class="detail-page">
+        <header class="page-header">
+            <h1>Cherry Blossoms in Kyoto</h1>
+            <h2>Using simple machine learning to predict flowering dates from temperature</h2>
+            <p class="top-links"><a target=_blank href="https://github.com/tammyzhang-1/cherry-blossoms/blob/main/Final%20Project.ipynb">Jupyter Notebook <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>, 
+                <a target=_blank href="https://github.com/tammyzhang-1/cherry-blossoms/tree/main">code <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+            </p>
+        </header>   
+        <div id="detail-tags">
+            <div class="tag">Academic Project</div>
+            <div class="tag">Data Analysis</div>
+            <div class="tag">Python</div>
+            <div class="tag">scikit-learn</div>
+            <div class="tag">Static Data Visualization</div>
+        </div>
+        <div class="detail-image-gallery-medium">
+            <div id="img1" class="detail-image">
+                <img style="width: auto; max-width: 100%; height: 100%; object-fit: cover;" src="../images/portfolio/cherry-blossoms/1.png" alt="Cherry blossoms" />
+            </div>
+            <div id="img2" class="detail-image">
+                <img src="../images/portfolio/cherry-blossoms/2.jpg" alt="Cherry blossoms" />
+            </div>
+        </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 2rem;">
+            <p>
+                Created as my final project for Cornell's <em>INFO 1998: Introduction to Machine Learning</em> course in Spring 2022, this Jupyter Notebook explores using Python's scikit-learn library to build a simple machine learning model that predicts the flowering dates of cherry blossoms in Kyoto, Japan using temperature data. 
+            </p>
+            <p>
+                I chose this topic after seeing several news articles about how cherry trees are flowering earlier and earlier in many places due to climate change.
+                After looking into studies on the topic, I found an <a href="https://www.ncei.noaa.gov/access/paleo-search/study/26430?siteId=57850">impressive dataset</a> that contained cherry blossom full-flowering dates as well as reconstructed average March temperatures in Kyoto - dated all the way from 2010 back to 800 A.D.
+            </p>
+        </div>
+        <div class="detail-image-gallery-large">
+            <div class="detail-image">
+                <img src="../images/portfolio/cherry-blossoms/3.png" alt="Cherry blossoms" />
+            </div>
+        </div>
+        <div class="detail-intro" style="padding-top: 0; padding-bottom: 2.5rem;">
+            <p>
+                After doing exploratory data analysis and looking at some static visualizations of the dataset, I initialized, trained, and tested a linear regression model using scikit-learn.
+                Surprisingly, despite the simplicity of the approach, the model produced a score of 0.97, meaning that it was able to explain 97% of the variance in flowering dates solely based on March temperature data.
+            </p>
+        </div>
+        <div class="detail-image-gallery-large">
+            <div class="detail-image">
+                <img src="../images/portfolio/cherry-blossoms/5.png" alt="Cherry blossoms" />
+            </div>
+        </div>
+        <div class="detail-intro" style="padding-top: 0; padding-bottom: 2.5rem;">
+            <p>
+                After seeing this result, I was curious about how flowering dates might be associated with weather factors other than temperature.
+                This involved having to find another dataset and do some cleaning and preprocessing - I eventually found a suitable <a href="https://www.data.jma.go.jp/stats/etrn/view/monthly_s3_en.php?block_no=47759&view=1">dataset</a> from the Japan Meteorological Agency that contained monthly averages for a variety of weather factors from 1880 to the present.
+            </p>
+            <p>
+                I then built a correlation matrix to quickly get an overview of how strongly each weather factor - humidity, precipitation, cloud cover, and sunshine duration - was associated with flowering dates. 
+                After seeing how models built with these factors performed, I found that no factor was nearly as strongly associated with flowering dates as temperature.
+            </p>
+        </div>
+        <div class="detail-image-gallery-large">
+            <div class="detail-image">
+                <img src="../images/portfolio/cherry-blossoms/4.png" alt="Cherry blossoms" />
+            </div>
+        </div>
+         <div class="detail-intro" style="padding-top: 0; padding-bottom: 2.5rem;">
+            <p>
+               This project was completed back when I was a second year at Cornell, and at the time, I was still getting the hang of using Python for data analysis and visualization.
+               Now that I've learned more advanced machine learning techniques and spent time better understanding how to interpret model results, I'd be interested in 
+               revisiting this project to see how I could improve my work.
+            </p>
+            <p>
+                That said, this was a fun project introducing me to the basics of machine learning and scikit-learn, and the process of finding datasets related to interesting real-world topics, 
+                cleaning them up, and then exploring them for unexpected insights is something I've enjoyed doing many times over since then.
+            </p>
+        </div>
+
+        <footer>
+            <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('nav');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+</script>
+
+<style>
+    .detail-image-gallery-medium {
+        flex-wrap:nowrap; 
+        height: 100%; 
+        max-height: 60vh; 
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    #img1 {
+        flex-grow: 1; 
+        height: 100%; 
+        width: auto; 
+        max-width: 70%;
+    }
+
+    #img2 {
+        min-height: 100%; 
+        height: 100%; 
+        max-width: 30%;
+    }
+
+    #img2 img {
+        min-height: 100%; 
+        object-fit: cover;
+    }
+
+
+    @media (max-width: 600px) {
+        .detail-image-gallery-medium {
+            flex-direction: column;
+            max-height: unset;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #img1, #img2 {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        #img2 img {
+            object-fit: contain;
+        }
+    }
+</style>
