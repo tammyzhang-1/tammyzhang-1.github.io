@@ -239,7 +239,7 @@ body {
     font-size: 2em;
 }
 
-#about, #skills, #work-experience, #projects, .detail-page {
+#about, #skills, #work-experience, #portfolio, .detail-page {
     padding: 0 8em 0 20em;
 }
 
@@ -269,7 +269,7 @@ h2 {
     padding-bottom: 0.5em;
 }
 
-#skills h2, #work-experience h2, #projects h2 {
+#skills h2, #work-experience h2, #portfolio h2 {
     padding-top: 2em;
 }
 
@@ -479,7 +479,7 @@ footer {
         padding: 5em 0 0 25em;
     }
 
-    #about, #skills, #work-experience, #projects, .detail-page {
+    #about, #skills, #work-experience, #portfolio, .detail-page {
         padding: 0 8em 0 25em;
     }
 
@@ -511,7 +511,7 @@ footer {
         gap: 3em;
     }
 
-    #about, #skills, #work-experience, #projects, .detail-page {
+    #about, #skills, #work-experience, #portfolio, .detail-page {
         padding: 0 8em 0 17em;
     }
 
@@ -542,7 +542,7 @@ footer {
         max-width: 45%;
     }
 
-    #about, #skills, #work-experience, #projects, .detail-page {
+    #about, #skills, #work-experience, #portfolio, .detail-page {
         padding: 0 8em 0 10em;
     }
 
@@ -595,7 +595,7 @@ footer {
         max-width: 40%;
     } 
 
-    #about, #skills, #work-experience, #projects, .detail-page {
+    #about, #skills, #work-experience, #portfolio, .detail-page {
         padding: 0 5em 0 6em;
     }
 
@@ -666,7 +666,7 @@ footer {
         text-align: center;
     }
 
-    #about, #skills, #work-experience, #projects, .detail-page {
+    #about, #skills, #work-experience, #portfolio, .detail-page {
         padding: 0 5em 0 5em;
     }
 
@@ -689,7 +689,7 @@ footer {
         height: auto;
     }
 
-    #about, #skills, #work-experience, #projects, .detail-page {
+    #about, #skills, #work-experience, #portfolio, .detail-page {
         padding: 0 3em 0 3em;
     }
 
@@ -779,7 +779,7 @@ footer {
         border-radius: 50%;
     }
 
-    #about, #skills, #work-experience, #projects, .detail-page {
+    #about, #skills, #work-experience, #portfolio, .detail-page {
         padding: 0 1.5em 0 1.5em;
     }
 
