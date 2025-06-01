@@ -50,7 +50,7 @@ main.detail-page h2 {
     margin-bottom: 0.5rem;
 }
 
-main.detail-page p {
+main.detail-page p, main.detail-page li {
     color: #484848;
 }
 
@@ -107,7 +107,7 @@ main.detail-page .top-links a:hover {
     padding-top: 2rem;
 }
 
-.detail-intro p {
+.detail-intro p, main.detail-page li {
     font-size: 1.15rem;
     line-height: 2rem;
 }
@@ -129,8 +129,6 @@ main.detail-page .top-links a:hover {
     height: auto;
     border: solid thin #eaeaea;
 }
-
-
 
 .detail-image-gallery-large .detail-image{
     padding-bottom: 2.5rem;

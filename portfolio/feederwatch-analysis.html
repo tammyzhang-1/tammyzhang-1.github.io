@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Zhang - Feederwatch Analysis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Mono:wght@400;500;700&family=Libre+Bodoni:ital@1&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="lora-regular" id="nav">
+        <span id="close">&times;</span>
+        <div class="vertical-line">
+        </div>
+        <nav style="width: 126.5px; text-align: center;">
+            <a class="home-link" href="../#portfolio">
+                <svg class="home-arrow" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-triangle-left" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1235</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M3.446,10.052 C2.866,9.471 2.866,8.53 3.446,7.948 L9.89,1.506 C10.471,0.924 11.993,0.667 11.993,2.506 L11.993,15.494 C11.993,17.395 10.472,17.076 9.89,16.495 L3.446,10.052 L3.446,10.052 Z" fill="#ffffff" class="si-glyph-fill"> </path> </g> </g></svg>
+                 home
+            </a>
+          <ul id="nav-icons">
+              <li><a href="mailto:tz332@cornell.edu"><img src="../images/email.png" alt="email icon" width="35" height="35" title="Email me at tz332@cornell.edu"/></a></li>
+              <li><a href="https://www.linkedin.com/in/tammy-zhang/" target="_blank"><img src="../images/linkedin.png" alt="linkedin" width="35" height="35" title="Link to my LinkedIn profile"/></a></li>
+              <li><a href="https://github.com/tammyzhang-1" target="_blank"><img src="../images/github.png" alt="github" width="35" height="35" title="Link to my GitHub profile" /></a></li>
+              <li><a href="../documents/Tammy_Zhang_Resume.pdf" target="_blank"><img src="../images/resume.png" alt="resume" width="45" height="45" title="See my resume" /></a></li>
+          </ul>
+        </nav>
+        <div class="vertical-line"></div>
+    </div>
+
+    <main class="detail-page">
+        <header class="page-header">
+            <h1>Feederwatch Analysis</h1>
+            <h2>Analyzing bird feeder observations in relation to housing density</h2>
+            <p class="top-links"><a target=_blank href="https://github.com/tammyzhang-1/feederwatch-analysis/blob/main/Phase%20V.ipynb">Full report <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>,
+                <a target=_blank href="https://github.com/tammyzhang-1/feederwatch-analysis/tree/main">code <?xml version="1.0" ?><svg class="external-link-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+            </p>
+        </header>   
+        <div id="detail-tags">
+            <div class="tag">Academic Project</div>
+            <div class="tag">Data Analysis</div>
+            <div class="tag">Python</div>
+            <div class="tag">pandas</div>
+            <div class="tag">NumPy</div>
+            <div class="tag">Matplotlib</div>
+            <div class="tag">scikit-learn</div>
+            <div class="tag">Seaborn</div>
+        </div>
+        <div class="detail-image-gallery-medium">
+            <div id="img1" class="detail-image">
+                <img style="width: auto; max-width: 100%; height: 100%; object-fit: cover;" src="../images/portfolio/feederwatch/1.png" alt="Feederwatch analysis" />
+            </div>
+            <div id="img2" class="detail-image">
+                <img src="../images/portfolio/feederwatch/2.png" alt="Feederwatch analysis" />
+            </div>
+        </div>
+        <div class="detail-intro" style="padding-top: 1.5rem; padding-bottom: 2rem;">
+            <p>
+                I completed this analysis with one other person as our final project for Cornell's <em>INFO 2950: Introduction to Data Science</em> course in Fall 2022.
+                The aim was to use Python to analyze data from the Cornell Lab of Ornithology's <a href="https://feederwatch.org/about/project-overview/">Project Feederwatch</a> - an citizen science intiative to gather observations of avian species at birdfeeders across North America - to answer several research questions:
+            </p>
+            <p>How does local housing density influence the distribution of avian species commonly observed at backyard feeders, on both a broad continental scale and on a smaller New York specific scale?</p>
+            <ul>
+                <li>Part A: Is observed North American bird species diversity at backyard feeders independent of housing density in the immediate area?</li>
+                <li>Part B: Do taxonomic groups in New York that share biological characteristics (like preferred diet/habitat) also display marked preferences for feeders with different housing densities, or are they observed at constant rates across backyards with different housing densities?</li>
+            </ul>
+            <p>We used three main datasets to address these questions. The first was a dataset composed of observations (rows) of bird sightings at backyard feeders between November 2020 and April 2021 across the US and Canada.</p>
+        </div>
+        <div class="detail-image-gallery-large">
+            <div class="detail-image">
+                <img src="../images/portfolio/feederwatch/3.png" alt="Feederwatch analysis" />
+            </div>
+        </div>
+        <div class="detail-intro" style="padding-top: 0rem; padding-bottom: 2.5rem;">
+            <p>The second dataset held attributes regarding location/environment details based on a unique location id, which could be joined to the location id in Dataset 1.</p>
+        </div>
+        <div class="detail-image-gallery-large">
+            <div class="detail-image">
+                <img src="../images/portfolio/feederwatch/4.png" alt="Feederwatch analysis" />
+            </div>
+        </div>
+        <div class="detail-intro" style="padding-top: 0rem; padding-bottom: 2.5rem;">
+            <p>The third dataset held species name translations. This dataset, when joined with Dataset 1 on species_code, allowed us to access the scientific name of each observed species, which then allowed us to investigate data by taxonomic group as in Research Question Part B.</p>
+        </div>
+        <div class="detail-image-gallery-large">
+            <div class="detail-image">
+                <img src="../images/portfolio/feederwatch/5.png" alt="Feederwatch analysis" />
+            </div>
+        </div>
+        <div class="detail-intro" style="padding-top: 0rem; padding-bottom: 2.5rem;">
+            <p>For Research Question Part A, we discovered that there was in fact some association between US-Canada avian species diversity and a feeder's local housing density. This relationship could be approximately modeled with a linear regression 
+                <em>y</em> = 0.291 - 0.013<em>x<sub>1</sub></em> - 0.024 <em>x<sub>2</sub></em> - 0.126 <em>x<sub>3</sub></em>,
+                where <em>y</em> represented the proportion of the total species for a region being found in a housing-density-specific area and where the baseline condition was a feeder in a rural area. Each x represented a housing density level (
+                <em>x<sub>1</sub></em> = suburban/rural, 
+                <em>x<sub>2</sub></em> = suburban, and 
+                <em>x<sub>3</sub></em> = urban). The overall trend suggested by our findings was that species diversity for a region (i.e. a U.S. state) decreased on average with increasing housing density (more urban areas tended to have fewer species observed at feeders).
+            </p>
+            <p>
+                For Research Question Part B, we focused on two main taxonomic groups commonly observed at backyard feeders in New York with disparate life characteristics - <em>Accipiter</em> (soaring birds of prey such as hawks) and <em>Junco</em> (small sparrows). After adjusting for the different levels of total observations taking place across different areas, we discovered that there were statistically significant housing density preferences for each genus.
+            </p>
+            <p>Overall, we illustrated that there is a statistically significant association between housing density on broad-scale avian biodiversity and on genus-specific observation frequencies.</p>
+        </div>
+        <footer>
+            <p class="fira-mono-regular">© 2025 Tammy Zhang. Site in progress! 🍵</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('nav');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        hamburger.classList.toggle('hidden');
+    });
+</script>
+
+<style>
+    .detail-image-gallery-medium {
+        flex-wrap:nowrap; 
+        height: 100%; 
+        max-height: 60vh; 
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    #img1 {
+        flex-grow: 1; 
+        height: 100%; 
+        width: auto; 
+        max-width: 50%;
+    }
+
+    #img2 {
+        min-height: 100%; 
+        height: 100%; 
+        max-width: 50%;
+    }
+
+    #img2 img {
+        min-height: 100%; 
+        object-fit: cover;
+    }
+
+
+    @media (max-width: 1000px) {
+        .detail-image-gallery-medium {
+            flex-direction: column;
+            max-height: unset;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #img1, #img2 {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        #img2 img {
+            object-fit: contain;
+        }
+    }
+</style>
